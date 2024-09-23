@@ -63,13 +63,15 @@
 main{
     display:flex;
     justify-content: center;
+    flex-direction: column;
 }
-  main > div {
+  .first-container {
     display:flex;
     background-image: url(Images/img_3865.jpg);
     background-attachment: scroll, local;
-    /* background-size:contain; */
+     background-size: cover; 
     background-repeat: no-repeat;
+    background-size: 150% 150%;
     justify-content: center;
     width:80vw;
     align-items: center;
@@ -103,4 +105,35 @@ main{
     background-color: hsla(103, 100%, 50%, 0.48);
   }
 
-  
+  .card-container{
+    display:flex;
+    
+    justify-content: space-evenly;
+  }
+
+  .card{
+    max-width: 24ch;
+    margin:1rem 2rem;
+  border: 1px solid black;
+  }
+
+  .card > h2{
+text-align: center;
+  }
+  /* .card-1{
+   background-image: url(Images/a4500taglio-quadr.jpg);
+   background-position:top;
+   background-size:contain;
+   background-repeat:no-repeat;
+   background-size: 100% 100%;
+   
+   background-color: var(--lpp-red);
+  } */
+
+ .card-1{ background-color:rgba(5, 5, 5, 0.9);
+  background-image: url(Images/a4500taglio-quadr.jpg);
+ }
+
+ section > p{
+    margin:0.5rem;
+ }
