@@ -44,44 +44,61 @@
     display:flex;
     flex-direction: column;
     justify-content: center;
-    background: linear-gradient(0.25turn, #d8533c, #73d2d3, #b2cc1c);
-    
+    /* background: linear-gradient(0.25turn, #d8533c, #73d2d3, #b2cc1c);
+ */    
+  }
+  nav{
+    width:100vw;
   }
 
   nav > ul {
     display:flex;
     flex-direction:row;
     justify-content: center;
-    gap:5rem;
+    padding:0;
+    
     color: var(--lpp-red);
   }
+  .navbar > li{
+    width:25%
+  }
+  li > button {
+    /* margin:1rem; */
+    width:100%;
+    border:none;
+    font-weight: bold;
+    font-size: 1.5rem;
+    
+  }
+  
+  
 
   .logo{
     width: 20vw;
     align-self: center;
   }
-main{
-    display:flex;
-    justify-content: center;
-    flex-direction: column;
-}
+
+
   .first-container {
+    margin:auto;
     display:flex;
     background-image: url(Images/img_3865.jpg);
-    background-attachment: scroll, local;
+    background-attachment: fixed;
      background-size: cover; 
     background-repeat: no-repeat;
-    background-size: 150% 150%;
-    justify-content: center;
-    width:80vw;
+    background-size: 100% 100%;
+    justify-content: space-evenly;
+    width:100vw;
     align-items: center;
     gap:25rem;
+    height:45vw;
 
-    height:500px;
+    
   }
 
   .top-header{
     max-width: 36ch;
+    margin-left: 1rem;
     
   }
 
@@ -93,12 +110,13 @@ main{
 
   .top-button{
     border-radius: 50%;
-    height:150px;
+    height:160px;
     border:none;
     background-color: hsla(113, 100%, 40%, 0.692);
     transform:rotate(0.05turn);
     font-size: large;
-    border:5px solid hsla(103, 100%, 50%, 0.48)
+    border:5px solid hsla(103, 100%, 50%, 0.48);
+    margin-right:5rem;
   }
 
   .top-button:hover{
@@ -114,13 +132,32 @@ main{
   .card{
     max-width: 24ch;
     margin:1rem 2rem;
-  border: 1px solid black;
+    border-radius: 5%;
+  /* border: 1px solid black; */
   }
 
   .card > h2{
 text-align: center;
   }
-  /* .card-1{
+  
+  .button-1, .card-1{
+    background-color: #d8533c;
+    /* background: linear-gradient(to right, #d8533c, 90%, #73d2d3 ) */
+  }
+
+  .button-2, .card-2{
+    background: linear-gradient(to left, #73d2d3, 70%, #d8533c )
+  }
+
+  .button-3, .card-3{
+    background: linear-gradient(to left, #b2cc1c, 70%, #73d2d3 )
+  }
+
+  .button-4, .card-4{
+    background: linear-gradient(to left, #d8533c, 50%, #b2cc1c )
+  }
+
+/*   .card-1{
    background-image: url(Images/a4500taglio-quadr.jpg);
    background-position:top;
    background-size:contain;
@@ -128,11 +165,11 @@ text-align: center;
    background-size: 100% 100%;
    
    background-color: var(--lpp-red);
-  } */
+  }
 
  .card-1{ background-color:rgba(5, 5, 5, 0.9);
   background-image: url(Images/a4500taglio-quadr.jpg);
- }
+ } */
 
  section > p{
     margin:0.5rem;
@@ -165,4 +202,5 @@ text-align: center;
 .footer-container{
   display: flex;
   justify-content: space-around;
+  padding:1.25rem;
 }
