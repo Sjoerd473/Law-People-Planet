@@ -48,7 +48,7 @@
     
   }
 
-  ul {
+  nav > ul {
     display:flex;
     flex-direction:row;
     justify-content: center;
@@ -137,3 +137,32 @@ text-align: center;
  section > p{
     margin:0.5rem;
  }
+
+ .blog-container{
+  display:flex;
+  justify-content: center;
+  gap: 5rem;
+ }
+
+/*  .blog-container > div {
+  display:flex;
+  flex-direction: column;
+ } */
+
+ .blog-cards{
+  max-width:20vw;
+ }
+
+ li > img {
+  border: 1px solid black;
+  border-radius: 5%;
+ }
+
+.blog-cards > ul > li {
+  margin:5px;
+}
+
+.footer-container{
+  display: flex;
+  justify-content: space-around;
+}
